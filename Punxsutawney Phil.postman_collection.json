@@ -1,0 +1,224 @@
+{
+	"info": {
+		"name": "Punxsutawney Phil",
+		"_postman_id": "8535af13-02d1-47b4-8a51-e4221aa39816",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Load Data",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/csv"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "Year,Prediction,February Average Temperature,March Average Temperature\n1898,Full Shadow,35.37,41.05\n1900,Full Shadow,30.76,41.27\n1901,Full Shadow,29.86,40.71\n1903,Full Shadow,28.42,42.21\n1904,Full Shadow,31.59,41.76\n1905,Full Shadow,26.94,45.12\n1906,Full Shadow,33.69,36.1\n1907,Full Shadow,35.46,45.7\n1908,Full Shadow,33.01,43.92\n1909,Full Shadow,35.02,40.35\n1910,Full Shadow,29.3,49.44\n1911,Full Shadow,33.66,44.02\n1912,Full Shadow,31.08,35.76\n1913,Full Shadow,29.5,38.71\n1914,Full Shadow,29.52,40.75\n1915,Full Shadow,35.94,36.95\n1916,Full Shadow,33.03,42.15\n1917,Full Shadow,30.09,38.35\n1918,Full Shadow,33.82,45.75\n1919,Full Shadow,32.25,40.89\n1920,Full Shadow,33.69,40.28\n1921,Full Shadow,36.9,46.63\n1922,Full Shadow,31.95,40.42\n1923,Full Shadow,29.57,38.3\n1924,Full Shadow,35.19,37.18\n1925,Full Shadow,38.3,44.24\n1926,Full Shadow,37.67,39.65\n1927,Full Shadow,37.9,42.26\n1928,Full Shadow,34.34,43.12\n1929,Full Shadow,26.92,43.56\n1930,Full Shadow,40.1,40.41\n1931,Full Shadow,37.94,39.42\n1932,Full Shadow,36.7,37.36\n1933,Full Shadow,29.59,41.83\n1934,No Shadow,34.32,42.78\n1935,Full Shadow,36.01,43.61\n1936,Full Shadow,25.23,43.43\n1937,Full Shadow,31.73,38.84\n1938,Full Shadow,36,45.01\n1939,Full Shadow,29.98,42.51\n1940,Full Shadow,33.85,41.52\n1941,Full Shadow,33.53,39.2\n1944,Full Shadow,34.5,38.5\n1945,Full Shadow,35.28,45.54\n1946,Full Shadow,34.88,46.78\n1947,Full Shadow,31.41,38.75\n1948,Full Shadow,31.62,38.71\n1949,Full Shadow,31.91,40.77\n1950,No Shadow,35.55,38.84\n1951,Full Shadow,34.54,38.55\n1952,Full Shadow,35.46,37.69\n1953,Full Shadow,35.87,43.75\n1954,Full Shadow,41.41,39.25\n1955,Full Shadow,31.05,40.06\n1956,Full Shadow,32.27,40.75\n1957,Full Shadow,38.07,41.27\n1958,Full Shadow,31.98,37.67\n1959,Full Shadow,32.49,41.45\n1960,Full Shadow,30.52,35.91\n1961,Full Shadow,37.42,43.47\n1962,Full Shadow,34.92,37.9\n1963,Full Shadow,34.12,43.72\n1964,Full Shadow,31.77,38.82\n1965,Full Shadow,32.52,35.44\n1966,Full Shadow,31.24,43\n1967,Full Shadow,32.88,43.63\n1968,Full Shadow,32.92,43.56\n1969,Full Shadow,32.81,36.03\n1970,No Shadow,35.35,38.5\n1971,Full Shadow,33.48,39.65\n1972,Full Shadow,33.55,44.04\n1973,Full Shadow,33.58,44.29\n1974,Full Shadow,34.74,44.38\n1975,No Shadow,32.76,38.7\n1976,Full Shadow,39.56,42.31\n1977,Full Shadow,36.03,43.18\n1978,Full Shadow,27.99,41.31\n1979,Full Shadow,28.13,42.06\n1980,Full Shadow,32.85,39.36\n1981,Full Shadow,36.59,42.85\n1982,Full Shadow,32.59,42.03\n1983,No Shadow,36.86,42.4\n1984,Full Shadow,37.38,40.08\n1985,Full Shadow,30.87,43.48\n1986,No Shadow,35.85,46.18\n1987,Full Shadow,37.38,42.57\n1988,No Shadow,33.69,42.4\n1989,Full Shadow,29.17,42.67\n1990,No Shadow,36.7,44.74\n1991,Full Shadow,39.81,43.32\n1992,Full Shadow,39.7,44.71\n1993,Full Shadow,31.14,41.79\n1994,Full Shadow,31.87,44.51\n1995,No Shadow,37.36,43.34\n1996,Full Shadow,35.69,39.02\n1997,No Shadow,36.05,44.67\n1998,Full Shadow,38.71,41.34\n1999,No Shadow,39.49,42.8\n2000,Full Shadow,39.78,46.04\n2001,Full Shadow,33.98,41.49\n2002,Full Shadow,36.39,39.54\n2003,Full Shadow,32.79,43.3\n2004,Full Shadow,33.57,47.41\n2005,Full Shadow,37.94,42.31\n2006,Full Shadow,34.83,42.62\n2007,No Shadow,32.41,47.66\n2008,Full Shadow,34.7,41.86\n2009,Full Shadow,36.77,42.87\n2010,Full Shadow,31.8,43.57\n2011,No Shadow,33.04,43.07\n2012,Full Shadow,37.51,50.41\n2013,No Shadow,34.77,40.91\n2014,Full Shadow,32.13,40.51\n2015,Full Shadow,32.99,45.39\n2016,No Shadow,39.47,47.5"
+				},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/data/punxsutawney",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"data",
+						"punxsutawney"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/csv"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "Date,Punxsutawney Phil,February Average Temperature,February Average Temperature (Northeast),February Average Temperature (Midwest),February Average Temperature (Pennsylvania),March Average Temperature,March Average Temperature (Northeast),March Average Temperature (Midwest),March Average Temperature (Pennsylvania)\n1898-02-02,Full Shadow,35.37,24.8,33.3,26.7,41.05,38,46,42\n1900-02-02,Full Shadow,30.76,21.4,27.5,24.1,41.27,26,37.9,29.3\n1901-02-02,Full Shadow,29.86,16,26.2,18.9,40.71,30.8,41.9,35.1\n1903-02-02,Full Shadow,28.42,24.5,31.3,28,42.21,40.4,47.7,44.5\n1904-02-02,Full Shadow,31.59,15,28.2,19.2,41.76,29.8,42.8,34\n1905-02-02,Full Shadow,26.94,15.2,22.2,18.1,45.12,31.4,47.2,36.9\n1906-02-02,Full Shadow,33.69,22,30.7,25.3,36.1,25.7,33.9,29.1\n1907-02-02,Full Shadow,35.46,15.2,31.5,20.1,45.7,33.3,50.2,39.5\n1908-02-02,Full Shadow,33.01,18.4,31.2,22.1,43.92,32.7,47.1,38.4\n1909-02-02,Full Shadow,35.02,26.4,37.2,32.9,40.35,29.6,41.1,33.1\n1910-02-02,Full Shadow,29.3,20.6,28.5,23.8,49.44,37.8,51.9,42.6\n1911-02-02,Full Shadow,33.66,21.4,37.5,28.5,44.02,28.4,42.9,32.8\n1912-02-02,Full Shadow,31.08,18.6,25.8,21.1,35.76,27.7,35.2,31.5\n1913-02-02,Full Shadow,29.5,20.2,29.6,25,38.71,35.9,41.1,40\n1914-02-02,Full Shadow,29.52,14.5,26.3,18.7,40.75,29.6,39,31.7\n1915-02-02,Full Shadow,35.94,26.7,37.6,30.6,36.95,28.3,34.9,30.3\n1916-02-02,Full Shadow,33.03,18.9,30.1,22.8,42.15,24.2,40.2,28.2\n1917-02-02,Full Shadow,30.09,17.8,29.1,23,38.35,31.2,42.6,35.4\n1918-02-02,Full Shadow,33.82,19.8,34.1,25.7,45.75,32.9,48.2,39.3\n1919-02-02,Full Shadow,32.25,25.4,34.1,29.6,40.89,34.8,43.9,38.6\n1920-02-02,Full Shadow,33.69,19.6,31.5,23,40.28,32.7,42.9,36.7\n1921-02-02,Full Shadow,36.9,25.1,37.6,30,46.63,40.6,51.6,45.4\n1922-02-02,Full Shadow,31.95,24.2,35.7,30.1,40.42,33.8,44.1,37.1\n1923-02-02,Full Shadow,29.57,16.2,29.1,22.1,38.3,27.9,40.1,34.3\n1924-02-02,Full Shadow,35.19,18.3,31.7,23.9,37.18,31.3,37.5,33.5\n1925-02-02,Full Shadow,38.3,29.2,38.7,32.8,44.24,35.5,45,38.1\n1926-02-02,Full Shadow,37.67,20.5,36.3,25.8,39.65,25.9,36.3,30.2\n1927-02-02,Full Shadow,37.9,26.2,40.4,32,42.26,35.2,44.6,39.2\n1928-02-02,Full Shadow,34.34,22.6,34.2,27.3,43.12,30.2,42,34\n1929-02-02,Full Shadow,26.92,21.7,26.2,24.7,43.56,36.2,47.5,41\n1930-02-02,Full Shadow,40.1,26.1,41.4,32.2,40.41,31.7,40.8,35.1\n1931-02-02,Full Shadow,37.94,24.2,38,29,39.42,32.9,37.7,33.7\n1932-02-02,Full Shadow,36.7,25.7,41,32.6,37.36,28.1,36.3,30.8\n1933-02-02,Full Shadow,29.59,25.8,32.3,28.4,41.83,30.1,41.5,33.8\n1934-02-02,No Shadow,34.32,10.4,27.2,15.2,42.78,29.2,38.8,32.1\n1935-02-02,Full Shadow,36.01,21.1,35,25.8,43.61,34.1,48.8,40\n1936-02-02,Full Shadow,25.23,15.6,24,18.3,43.43,37.4,46.1,39.4\n1937-02-02,Full Shadow,31.73,26.3,32.2,28.5,38.84,27.6,38.2,31.4\n1938-02-02,Full Shadow,36,26,40.2,31.4,45.01,35,49.6,40.1\n1939-02-02,Full Shadow,29.98,24.9,34,30.2,42.51,29.3,44.4,35.6\n1940-02-02,Full Shadow,33.85,22.3,31.9,26.3,41.52,27,39.4,29.5\n1941-02-02,Full Shadow,33.53,22,29.4,23.6,39.2,26.7,36.8,28.9\n1942-02-02,Partial Shadow,30.74,20.1,29.7,23.2,41.31,35.7,44.1,37.8\n1944-02-02,Full Shadow,34.5,22.4,36.3,27.5,38.5,28.9,39.8,32.7\n1945-02-02,Full Shadow,35.28,23.6,33.9,27.1,45.54,41.6,51.9,46.2\n1946-02-02,Full Shadow,34.88,21.4,36.5,27.4,46.78,41.6,52.4,45.3\n1947-02-02,Full Shadow,31.41,20.5,25.7,21.7,38.75,29.7,34.8,30.3\n1948-02-02,Full Shadow,31.62,19.7,32.9,25.6,38.71,32.7,43.4,38.3\n1949-02-02,Full Shadow,31.91,28,36.3,32.9,40.77,33.5,42,36.8\n1950-02-02,No Shadow,35.55,21.6,34.7,27.4,38.84,27.3,38.7,30.8\n1951-02-02,Full Shadow,34.54,26,33.6,28.9,38.55,33.4,40.4,36.1\n1952-02-02,Full Shadow,35.46,26.4,37.5,30.6,37.69,32,40.6,34.6\n1953-02-02,Full Shadow,35.87,28,37.4,31.8,43.75,34.8,44.5,37.9\n1954-02-02,Full Shadow,41.41,30,41.1,33.6,39.25,32.2,40.2,35\n1955-02-02,Full Shadow,31.05,24.2,33.4,27.3,40.06,32.3,43.1,37.2\n1956-02-02,Full Shadow,32.27,25.6,36.1,29.8,40.75,27.9,42.1,32.9\n1957-02-02,Full Shadow,38.07,27.3,38.6,31.4,41.27,33.6,41.5,36.1\n1958-02-02,Full Shadow,31.98,17.9,24.5,20.4,37.67,33.3,37.3,33.7\n1959-02-02,Full Shadow,32.49,20.6,33.7,27,41.45,30.6,41.4,34.1\n1960-02-02,Full Shadow,30.52,26.9,29.8,28.6,35.91,24.2,28.5,24.5\n1961-02-02,Full Shadow,37.42,24.6,37.3,28.9,43.47,32.6,45.1,37.1\n1962-02-02,Full Shadow,34.92,19.8,34.8,25.4,37.9,32.7,38.6,34.2\n1963-02-02,Full Shadow,34.12,16.2,26.3,18.4,43.72,33.1,46,37.5\n1964-02-02,Full Shadow,31.77,21.6,30.9,23.6,38.82,33.6,41.4,36.9\n1965-02-02,Full Shadow,32.52,22.1,31.8,26.2,35.44,30.2,35.1,32.1\n1966-02-02,Full Shadow,31.24,23.2,31.9,26.5,43,34.1,44.1,37.5\n1967-02-02,Full Shadow,32.88,18.2,29.1,22.6,43.63,29.1,45.6,34.4\n1968-02-02,Full Shadow,32.92,18.4,27.3,22.3,43.56,34.8,43.8,38.4\n1969-02-02,Full Shadow,32.81,23.7,33,26.7,36.03,30.1,36.2,32.7\n1970-02-02,No Shadow,35.35,22.5,31.3,25.3,38.5,29.8,38.9,31.6\n1971-02-02,Full Shadow,33.48,23.9,31.8,27.5,39.65,29.9,38.9,32.5\n1972-02-02,Full Shadow,33.55,20.1,31.5,23.2,44.04,29.3,41.9,33.1\n1973-02-02,Full Shadow,33.58,21.8,32.7,25.5,44.29,39.2,49.6,42.9\n1974-02-02,Full Shadow,34.74,21.7,34.5,26.2,44.38,32.5,46.3,36.9\n1975-02-02,No Shadow,32.76,24.7,33.5,28.8,38.7,30.4,38.6,33.7\n1976-02-02,Full Shadow,39.56,28.8,41.1,33.5,42.31,35.2,47.9,40.8\n1977-02-02,Full Shadow,36.03,23.2,31.5,26.1,43.18,38.4,47.4,41.2\n1978-02-02,Full Shadow,27.99,15.6,20.3,17.2,41.31,28.8,37.3,31.9\n1979-02-02,Full Shadow,28.13,13.9,22.9,16.4,42.06,37,43.7,39.4\n1980-02-02,Full Shadow,32.85,20,26.6,23,39.36,31,38.5,33.3\n1981-02-02,Full Shadow,36.59,30.3,34.1,30.7,42.85,33,41.7,34.1\n1982-02-02,Full Shadow,32.59,22.9,30.4,26.9,42.03,31.5,43.5,34.9\n1983-02-02,No Shadow,36.86,26.2,35.9,29.8,42.4,35.7,43.5,38.7\n1984-02-02,Full Shadow,37.38,31.2,38.6,33.8,40.08,26.6,36.8,29.5\n1985-02-02,Full Shadow,30.87,24.8,28.4,27.1,43.48,34.5,46.3,38.3\n1986-02-02,No Shadow,35.85,22.3,34.3,26.7,46.18,34.7,45,38\n1987-02-02,Full Shadow,37.38,21.8,36.9,26.8,42.57,35.5,45.8,39\n1988-02-02,No Shadow,33.69,23.7,30.4,26.8,42.4,33.2,43,37.2\n1989-02-02,Full Shadow,29.17,23,28.6,27.1,42.67,31.8,44,36.7\n1990-02-02,No Shadow,36.7,28,39.9,33.9,44.74,35.7,46.6,40.2\n1991-02-02,Full Shadow,39.81,28.7,37.4,32.4,43.32,36.1,46.1,39.5\n1992-02-02,Full Shadow,39.7,25.7,39.5,30.9,44.71,30,44,34.5\n1993-02-02,Full Shadow,31.14,17.5,30.5,23.5,41.79,29.8,39.5,32.8\n1994-02-02,Full Shadow,31.87,19.4,32.4,24.1,44.51,31.6,42.9,33.8\n1995-02-02,No Shadow,37.36,20.6,32.6,23.9,43.34,36.2,45.6,39.7\n1996-02-02,Full Shadow,35.69,23.6,33.4,27,39.02,29.7,37.2,31.8\n1997-02-02,No Shadow,36.05,28.6,37.7,33,44.67,32.1,45.8,37.6\n1998-02-02,Full Shadow,38.71,31.6,40.9,35.8,41.34,36.2,42.9,39.7\n1999-02-02,No Shadow,39.49,28.2,39.5,31.7,42.8,33,39.8,34.2\n2000-02-02,Full Shadow,39.78,27.2,40.1,31.6,46.04,39.1,47.7,42.6\n2001-02-02,Full Shadow,33.98,26,36.1,31.5,41.49,30.2,39.3,33.3\n2002-02-02,Full Shadow,36.39,29.7,36.8,33.9,39.54,34.7,41.5,38.2\n2003-02-02,Full Shadow,32.79,20,30.2,23.8,43.3,32.9,44.8,37.2\n2004-02-02,Full Shadow,33.57,24,33.1,27,47.41,35.9,47,39.5\n2005-02-02,Full Shadow,37.94,26.2,38.1,30.1,42.31,29.7,40.8,32.3\n2006-02-02,Full Shadow,34.83,26.2,33.7,29.8,42.62,34,43.8,37\n2007-02-02,No Shadow,32.41,18,26.1,20.1,47.66,32.7,50.1,37.4\n2008-02-02,Full Shadow,34.7,25.4,32.1,27.7,41.86,31.6,42,35.6\n2009-02-02,Full Shadow,36.77,26.2,35.9,29.6,42.87,34.1,45.7,38.2\n2010-02-02,Full Shadow,31.8,25.9,28.2,25.8,43.57,39.6,44.6,42\n2011-02-02,No Shadow,33.04,24.1,34.4,28.6,43.07,33,44.2,36.3\n2012-02-02,Full Shadow,37.51,30.6,38.6,34.3,50.41,43.4,56.3,47.7\n2013-02-02,No Shadow,34.77,25.3,33.4,27.4,40.91,32.7,37.3,33.9\n2014-02-02,Full Shadow,32.13,21,27.1,22.8,40.51,26,38,30.3\n2015-02-02,Full Shadow,32.99,12.1,23.4,16.1,45.39,27.8,41.6,31.6\n2016-02-02,No Shadow,39.47,28.1,36.9,30.8,47.5,38.8,49.5,43.4"
+				},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/data/punxsutawney",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"data",
+						"punxsutawney"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Classification Model",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"dataSourceName\": \"punxsutawney\",\n\t\"predictionDomain\": \"classification\",\n\t\"targetColumn\": \"Prediction\",\n\t\"columns\": {\n        \"Year\": {\n            \"dataType\": \"string\",\n            \"role\": \"none\"\n        },\n        \"Prediction\": {\n            \"dataType\": \"string\",\n            \"role\": \"target\"\n        },\n        \"February Average Temperature\": {\n            \"dataType\": \"numericMeasure\",\n            \"role\": \"feature\"\n        },\n        \"March Average Temperature\": {\n            \"dataType\": \"numericMeasure\",\n            \"role\": \"feature\"\n        }\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/sessions/model",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"sessions",
+						"model"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Check Model Session Status",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/sessions/{{session-id}}",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"sessions",
+						"{{session-id}}"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Predict Phil Reaction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n  \"data\": [{\n    \"February Average Temperature\": 21,\n    \"March Average Temperature\": 45\n  }],\n  \"extraParameters\": {\n\t\"includeClassScores\": true\n  }\n}"
+				},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/models/{{model-id}}/predict",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"models",
+						"{{model-id}}",
+						"predict"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Model Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n  \"data\": [{\n\t\"observed\": \"I am Big foot. I live in the woods with the other Feet. One day I aspire to being a Big Leg.\"\n  }],\n  \"extraParameters\": {\n\t\"includeClassScores\": true\n  }\n}"
+				},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/models/{{model-id}}",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"models",
+						"{{model-id}}"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
